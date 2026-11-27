@@ -5,9 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Guardián · Te avisa antes de que te estafen</title>
 <meta name="description" content="Guardián es una app que funciona en segundo plano y te avisa en segundos si un mensaje, llamada o enlace parece estafa, antes de que hagas clic, pagues o entregues tus datos.">
+<meta property="og:title" content="Guardián · Un guardián invisible en tu celular">
+<meta property="og:description" content="Te avisa en segundos si un mensaje, llamada o enlace es una estafa.">
+<meta property="og:image" content="media/guardian-demo-poster.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +18,7 @@
 <header class="top">
   <div class="wrap top-in">
     <a class="logo" href="#">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="currentColor"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="#FBF6EE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="currentColor"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="#EEF2EF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Guardián
     </a>
     <a class="btn btn-small" href="#precios" data-cta="header">Quiero protegerme</a>
@@ -25,91 +28,79 @@
 <main>
 
 <section class="hero">
-  <div class="wrap hero-in">
+  <div class="wrap">
     <div class="hero-text">
-      <p class="kicker">Para personas de 55 a 70 años y sus familias</p>
       <h1>Un guardián invisible en tu celular</h1>
       <p class="lead">Te avisa en segundos si un mensaje, una llamada o un enlace es una estafa, antes de que hagas clic, pagues o entregues tus datos. Sin depender de tus hijos ni de nadie.</p>
       <div class="hero-cta">
         <a class="btn" href="#precios" data-cta="hero">Quiero protegerme</a>
-        <a class="btn btn-ghost" href="#como-funciona" data-cta="hero-como">¿Cómo funciona?</a>
-      </div>
-      <ul class="checks">
-        <li>Funciona sola, en segundo plano</li>
-        <li>Revisa WhatsApp, SMS y llamadas</li>
-        <li>Te explica todo en palabras simples</li>
-      </ul>
-    </div>
-
-    <div class="phone" aria-label="Ejemplo de aviso de Guardián en un celular">
-      <div class="phone-screen">
-        <div class="chat-head">
-          <span class="avatar">?</span>
-          <div><strong>+56 9 4•••• 2187</strong><small>número desconocido</small></div>
-        </div>
-        <div class="bubble">Hola tía, soy yo, cambié de chip 🙈 me puede transferir 30 lucas? es urgente, después le explico</div>
-        <div class="alert">
-          <div class="alert-top">
-            <span class="alert-icon">!</span>
-            <div>
-              <strong>Ojo, esto parece estafa</strong>
-              <div class="meter"><span style="width:87%"></span></div>
-              <small><b>87%</b> probable fraude</small>
-            </div>
-          </div>
-          <p>Te piden plata con urgencia desde un número nuevo.</p>
-          <p class="alert-do">Llama a tu familiar al número de siempre antes de transferir.</p>
-        </div>
+        <span class="hero-note">Para personas de 55 a 70 años y para sus hijos</span>
       </div>
     </div>
   </div>
+  <div class="video-band"><div class="wrap">
+    <figure class="video">
+      <video id="demo" playsinline preload="metadata" poster="media/guardian-demo-poster.jpg">
+        <source src="media/guardian-demo.mp4" type="video/mp4">
+      </video>
+      <button class="video-play" aria-label="Reproducir video">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+        <span>Mira la misma tarde, con y sin Guardián <small>40 segundos</small></span>
+      </button>
+    </figure>
+  </div></div>
 </section>
 
 <section class="pain">
   <div class="wrap">
     <h2>Esto le podría pasar a tus padres o abuelos</h2>
     <p class="section-lead">Son casos que nos contaron en entrevistas. Les llegan a todos, y basta un mal momento para caer.</p>
-    <div class="cards">
-      <article class="card">
-        <span class="tag">WhatsApp</span>
+    <div class="cases">
+      <article>
+        <p class="channel">Por WhatsApp</p>
         <h3>“Tía, cambié de chip”</h3>
         <p>Alguien se hace pasar por un sobrino o un vecino y pide una transferencia urgente. A una señora de 66 años la salvó una vecina que pasaba justo por ahí.</p>
       </article>
-      <article class="card">
-        <span class="tag">SMS</span>
+      <article>
+        <p class="channel">Por SMS</p>
         <h3>“Tus puntos vencen hoy”</h3>
         <p>Un mensaje con un link para canjear puntos o retirar una encomienda. Un entrevistado puso los datos de su tarjeta y le hicieron compras en el extranjero.</p>
       </article>
-      <article class="card">
-        <span class="tag">Llamada</span>
+      <article>
+        <p class="channel">Por llamada</p>
         <h3>“Llamamos de su banco”</h3>
         <p>Una voz amable pide los códigos de la tarjeta de coordenadas “para proteger su cuenta”. El banco nunca te va a pedir eso por teléfono.</p>
       </article>
     </div>
-    <blockquote class="quote">“Una se siente re tonta.”<cite>Mirta, 66 años, después de casi caer</cite></blockquote>
+    <blockquote class="quote">
+      <p>“Una se siente re tonta.”</p>
+      <cite>Entrevistada de 66 años, después de casi caer</cite>
+    </blockquote>
   </div>
 </section>
 
 <section class="how" id="como-funciona">
-  <div class="wrap">
-    <h2>Cómo funciona</h2>
-    <ol class="steps">
-      <li>
-        <span class="num">1</span>
-        <h3>Te avisa sola</h3>
-        <p>Guardián revisa en segundo plano lo que te llega por WhatsApp, SMS y llamadas. No tienes que reenviar nada ni preguntarle a nadie.</p>
-      </li>
-      <li>
-        <span class="num">2</span>
-        <h3>Te dice qué tan peligroso es</h3>
-        <p>Si algo parece estafa, aparece un aviso con un porcentaje y la razón en palabras simples: un link raro, te piden un código, un número que no conoces.</p>
-      </li>
-      <li>
-        <span class="num">3</span>
-        <h3>Te dice qué hacer</h3>
-        <p>Pasos cortos y claros: no toques el link, llama al número oficial, no entregues códigos, bloquea la tarjeta. Aunque ya hayas hecho clic.</p>
-      </li>
-    </ol>
+  <div class="wrap how-in">
+    <div class="phone">
+      <img src="media/alerta.jpg" alt="Aviso de Guardián en un celular: Ojo, esto parece estafa, 87% probable fraude, con el paso a seguir y un botón para no transferir" width="540" height="1170" loading="lazy">
+    </div>
+    <div>
+      <h2>Así te avisa</h2>
+      <ol class="steps">
+        <li>
+          <h3>Revisa lo que te llega, sola</h3>
+          <p>Guardián funciona en segundo plano con WhatsApp, SMS y llamadas. No tienes que reenviar nada ni preguntarle a nadie.</p>
+        </li>
+        <li>
+          <h3>Te dice qué tan peligroso es</h3>
+          <p>Si algo parece estafa, aparece un aviso con un porcentaje y la razón en palabras simples: un link raro, te piden un código, un número que no conoces.</p>
+        </li>
+        <li>
+          <h3>Te dice qué hacer</h3>
+          <p>Pasos cortos: no toques el link, llama al número oficial, no entregues códigos, bloquea la tarjeta. Aunque ya hayas hecho clic.</p>
+        </li>
+      </ol>
+    </div>
   </div>
 </section>
 
@@ -119,11 +110,11 @@
       <h2>Tranquilidad para toda la familia</h2>
       <p>Si eres hijo o hija, puedes instalar Guardián en el celular de tus papás. Ellos reciben el aviso al tiro, y tú puedes recibir una copia cuando algo sea muy sospechoso. No tienes que estar pendiente del teléfono todo el día.</p>
     </div>
-    <ul class="privacy">
-      <li><strong>No guarda tus conversaciones.</strong> Revisa el mensaje en el momento y lo olvida.</li>
-      <li><strong>No graba tus llamadas.</strong> Analiza el número y las señales de riesgo.</li>
-      <li><strong>Te pide permiso para todo.</strong> Te explicamos cada permiso antes de activarlo.</li>
-    </ul>
+    <dl class="privacy">
+      <div><dt>No guarda tus conversaciones</dt><dd>Revisa el mensaje en el momento y lo olvida.</dd></div>
+      <div><dt>No graba tus llamadas</dt><dd>Analiza el número y las señales de riesgo.</dd></div>
+      <div><dt>Te pide permiso para todo</dt><dd>Te explicamos cada permiso antes de activarlo.</dd></div>
+    </dl>
   </div>
 </section>
 
@@ -140,10 +131,10 @@
           <li>WhatsApp, SMS y llamadas</li>
           <li>Avisos con porcentaje y pasos a seguir</li>
         </ul>
-        <button class="btn btn-block" data-plan="personal">Quiero este plan</button>
+        <button class="btn btn-block btn-quiet" data-plan="personal">Quiero el plan Personal</button>
       </article>
       <article class="plan plan-featured">
-        <span class="badge">El más elegido por hijos</span>
+        <p class="plan-note">Pensado para hijos que cuidan a sus papás</p>
         <h3>Familia</h3>
         <p class="price"><span>$4.990</span> al mes</p>
         <ul>
@@ -151,7 +142,7 @@
           <li>Todo lo del plan Personal</li>
           <li>Copia del aviso para un familiar de confianza</li>
         </ul>
-        <button class="btn btn-block" data-plan="familia">Quiero este plan</button>
+        <button class="btn btn-block" data-plan="familia">Quiero el plan Familia</button>
       </article>
     </div>
   </div>
@@ -190,7 +181,7 @@
 
 <footer class="foot">
   <div class="wrap">
-    <p>Guardián · 2026</p>
+    <p>Guardián, 2026</p>
   </div>
 </footer>
 

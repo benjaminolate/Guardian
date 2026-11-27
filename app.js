@@ -53,6 +53,27 @@
     });
   });
 
+  // Video demostrativo
+  var video = document.getElementById("demo");
+  var playBtn = document.querySelector(".video-play");
+  if (video) {
+    var fig = video.closest(".video");
+    var sentPlay = false, sentHalf = false, sentEnd = false;
+    if (playBtn) playBtn.addEventListener("click", function () { video.play(); });
+    video.addEventListener("click", function () { if (!video.controls) video.play(); });
+    video.addEventListener("play", function () {
+      fig.classList.add("playing");
+      video.controls = true;
+      if (!sentPlay) { sentPlay = true; track("video_play"); }
+    });
+    video.addEventListener("timeupdate", function () {
+      if (!sentHalf && video.duration && video.currentTime / video.duration >= 0.5) { sentHalf = true; track("video_mitad"); }
+    });
+    video.addEventListener("ended", function () {
+      if (!sentEnd) { sentEnd = true; track("video_fin"); }
+    });
+  }
+
   // Modal
   var modal = document.getElementById("modal");
   var stepForm = document.getElementById("step-form");

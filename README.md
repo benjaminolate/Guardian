@@ -9,6 +9,7 @@ La app todavía no existe. La página la muestra como producto terminado, con pl
 | Evento | Cuándo pasa |
 |---|---|
 | `visita` | Alguien abre la página |
+| `video_play` / `video_mitad` / `video_fin` | Le da play al video, llega a la mitad o lo termina |
 | `clic_cta` | Toca un botón "Quiero protegerme" |
 | `elige_plan` | Toca "Quiero este plan" (Personal o Familia) |
 | `registro` | Deja nombre, contacto y para quién es |
