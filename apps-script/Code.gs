@@ -91,6 +91,7 @@ function updateSummary(ss) {
   var sh = ss.getSheetByName("resumen") || ss.insertSheet("resumen");
   sh.clear();
   sh.getRange(1, 1, rows.length, 2).setValues(rows);
+  sh.getRange("B2:B8").setNumberFormat("0");
   sh.getRange("B9:B10").setNumberFormat("0%");
   sh.getRange("A1:B1").setFontWeight("bold");
   sh.getRange(12, 1, 1, 2).setFontWeight("bold");
