@@ -21,7 +21,7 @@ La hoja `resumen` calcula sola las visitas, los registros y el porcentaje de con
 ### 1. Publicar la página (GitHub Pages)
 1. En el repositorio, ve a **Settings → Pages**.
 2. En *Source* elige **Deploy from a branch**, rama `main` y carpeta `/ (root)`. Guarda.
-3. En un par de minutos queda en `https://benjaminolate.github.io/landin-page-ciberseguridad/`.
+3. En un par de minutos queda en `https://benjaminolate.github.io/Guardian/`.
 
 ### 2. Conectar la planilla de Google
 1. Crea una planilla nueva en Google Sheets.
